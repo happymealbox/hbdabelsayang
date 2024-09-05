@@ -3,16 +3,16 @@ function initengahan(){
     Content.style = "opacity:1;margin-top:0";
     bodyblur.style="opacity:.7";
     wallpaper.style="transform: scale(1.5);";
-}
+  }
   
-async function mulainama() {
+  async function mulainama() {
     bodyblur.style="opacity:.7";
     wallpaper.style="transform: scale(1);";
     fotostiker.style="display:inline-flex;";setTimeout(ftmuncul,200);
     setTimeout(kethalo,500);
-}
+  }
   
-function ftmuncul(){
+  function ftmuncul(){
     if(ftganti==0){fotostiker.src = deffotostiker;}
     if(ftganti==1){fotostiker.src = fotostiker1.src;}
     if(ftganti==2){fotostiker.src = fotostiker2.src;}
@@ -21,8 +21,7 @@ function ftmuncul(){
     if(ftganti==5){fotostiker.src = fotostiker5.src;}
     
     fotostiker.style="display:inline-flex;opacity:1;transform:scale(1)";
-}
-
+  }
   function fthilang(){fotostiker.style="display:inline-flex;opacity:0;transition:all .7s ease;transform:scale(.1)";}
   function jjfoto(){fotostiker.style.animation="rto .8s infinite alternate";}
   
@@ -59,22 +58,10 @@ function ftmuncul(){
       otomatis();opsL.style.opacity="0";opsLclick=0;
     }
   }
-  
-  function aktiopsL(){
-	  opsL.innerHTML=defopsL;opsL.style.opacity=".8";opsLclick=1;opsLcheck+=1;
-  }
-  
-  function gantiopsL(){
-	  opsL.innerHTML="[ Klik beberapa LOVE-nya ]";opsL.style.opacity=".8";
-  }
-	  
-  function otomatis(){
-	  pesan3.style="transition:none";pesan8.style="display:none";kalimat.style="opacity:0";if(otoaktipesan==0){setTimeout(otolanj,400)}
-  }
-	  
-  function otolanj(){
-	  kalimat.style="opacity:1";
-  }
+  function aktiopsL(){opsL.innerHTML=defopsL;opsL.style.opacity=".8";opsLclick=1;opsLcheck+=1;}
+  function gantiopsL(){opsL.innerHTML="[ Klik beberapa LOVE-nya ]";opsL.style.opacity=".8";}
+  function otomatis(){pesan3.style="transition:none";pesan8.style="display:none";kalimat.style="opacity:0";if(otoaktipesan==0){setTimeout(otolanj,400)}}
+  function otolanj(){kalimat.style="opacity:1";}
 
   function aktipesan1(){kalimat.innerHTML=pesan1.innerHTML;kolombaru.style="position:relative;opacity:1;transform:scale(1);";}
   vketik2=pesan2.innerHTML;
@@ -100,7 +87,7 @@ function ftmuncul(){
   },}).go();
   }
   function aktipesan4(){
-    wallpaper.style="transform: scale(1.5);";kalimat.innerHTML=pesan4.innerHTML + nama + " ðŸ¥³";kalimat.style="transform:scale(1.2)";setTimeout(aktipesan5,1000);
+    wallpaper.style="transform: scale(1.5);";kalimat.innerHTML=pesan4.innerHTML + nama + " 🥳";kalimat.style="transform:scale(1.2)";setTimeout(aktipesan5,1000);
   }
   vketik5=pesan5.innerHTML;pesan5.innerHTML="";
   function aktipesan5(){
@@ -142,7 +129,7 @@ function ftmuncul(){
   new TypeIt("#pesan8", {
   strings: ["" + vketik8, "" + vketik9], startDelay: 20, speed: 45, cursor: true, deleteSpeed: 30, breakLines: false, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan8.innerHTML=vketik9;setTimeout(otomatis,1400);setTimeout(aktipesan10,1710);
+    pesan8.innerHTML=vketik9;setTimeout(otomatis,1300);setTimeout(aktipesan10,1710);
   },}).go();
   }
   function aktipesan10(){
