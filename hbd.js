@@ -142,7 +142,7 @@ function ftmuncul(){
   new TypeIt("#pesan8", {
   strings: ["" + vketik8, "" + vketik9], startDelay: 20, speed: 45, cursor: true, deleteSpeed: 30, breakLines: false, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan8.innerHTML=vketik9;setTimeout(otomatis,1700);setTimeout(aktipesan10,1710);
+    pesan8.innerHTML=vketik9;setTimeout(otomatis,1400);setTimeout(aktipesan10,1710);
   },}).go();
   }
   function aktipesan10(){
